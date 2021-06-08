@@ -1,0 +1,40 @@
+{
+    "name": "tanbing/blogpackage",
+    "description": "A demo package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "tanbing",
+            "email": "729832416@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+          "Tanbing\\BlogPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tanbing\\BlogPackage\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tanbing\\BlogPackage\\BlogPackageServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "Tanbing\\BlogPackage\\Facades\\Calculator"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+namespace DummyNamespace;
+use Tanbing\BlogPackage\Foo;
+class DummyClass implements Foo
+{
+    public function myFoo()
+    {
+        // foo2
+    }
+}
